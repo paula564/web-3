@@ -1,0 +1,35 @@
+p {
+
+    font-style: italic;
+}
+
+video {
+
+    display: block;
+    margin: auto;
+    margin-block: 50px 20px;
+}
+
+/*desktop code*/
+
+@media (min-width: 768px) {
+
+    video {
+
+        margin-block: 50px 20px;
+    }
+
+}
+
+/*mobile code*/
+
+@media (min-width: 350px) and (max-width: 768px) {
+
+    video {
+
+        width: 100%;
+        margin-block: 20px 20px;
+
+
+    }
+}

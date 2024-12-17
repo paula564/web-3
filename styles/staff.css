@@ -1,0 +1,10 @@
+/*mobile code*/
+
+@media (min-width: 350px) and (max-width: 768px) {
+
+    img:not(.icon) {
+
+        border: 4px solid var(--purple);
+    }
+
+}

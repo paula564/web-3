@@ -1,0 +1,217 @@
+h2:not(header div h2) {
+  text-align: center;
+  margin-block-start: 20px;
+}
+
+
+form {
+
+  color: var(--purple);
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 8px;
+
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0 5px;
+}
+
+legend,
+input[type="submit"],
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border: 2px solid var(--purple);
+  border-radius: 20px;
+}
+
+fieldset,
+input[type="submit"] {
+
+  border: 2px solid var(--purple);
+
+}
+
+fieldset {
+  padding: 10px;
+  border-radius: 6px;
+  margin-block: 10px 20px;
+
+}
+
+textarea {
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  margin-block-start: 10px;
+  padding: 12px;
+  background-color: var(--white);
+  border-radius: 20px;
+  font-size: 1em;
+  color: var(--purple);
+}
+
+.contactus-positioned-image {
+
+  position: absolute;
+}
+
+
+
+
+/*mobile code*/
+
+@media (min-width: 350px) and (max-width: 768px) {
+
+  .contactus-positioned-image {
+
+    inset-inline-start: 290px;
+    inset-block-start: 215px;
+  }
+
+  form {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  fieldset {
+
+    padding-inline-start: 30px;
+    margin-inline: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    padding: 8px;
+    margin: 6px 0 12px 0;
+    width: 100%;
+  }
+
+
+  input[type="radio"],
+  input[type="checkbox"] {
+
+    position: relative;
+
+    inset-inline-end: 20px;
+    inset-block-end: 32px;
+    margin-inline-end: 10px;
+    margin-block-start: 12px;
+
+
+
+  }
+
+}
+
+/*desktop code*/
+
+@media (min-width: 768px) {
+
+  main {
+
+    width: 75%;
+
+  }
+
+  .contactus-positioned-image {
+
+    width: 8%;
+    inset-inline-end: 130px;
+    inset-block-start: 120px;
+
+
+  }
+
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px auto;
+  }
+
+  label {
+    grid-column: 1/2;
+  }
+
+  label[for="feedback"] {
+
+    grid-column: 1/3;
+  }
+
+
+  fieldset {
+
+    grid-column: 1/3;
+    padding-inline-start: 30px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  label[type="radio"],
+  label[type="checkbox"] {
+
+    display: inline-block;
+    grid-area: label;
+
+
+  }
+
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    
+    margin-inline-end: 10px;
+    position: relative;
+    inset-inline-start: -20px;
+    inset-block-start: -22px;
+    margin-inline-end: 20px;
+
+  }
+
+  input[type="submit"] {
+    grid-column: 1/3;
+    padding: 15px;
+    font-size: 1.2em;
+
+  }
+
+  textarea {
+
+    grid-column: 1/3;
+  }
+
+  input[type="submit"]:hover {
+
+    color: var(--purple);
+    box-shadow:
+      0 0 8px var(--purple),
+      0 0 15px var(--purple),
+      0 0 20px var(--purple),
+      0 0 25px #7e73f1,
+      0 0 35px #7e73f1,
+      0 0 50px #7e73f1;
+
+
+  }
+
+
+
+}
